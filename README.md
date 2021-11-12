@@ -1,2 +1,2 @@
 # libft
-the first project in 42 circus  
+the first project in 42 cursus  
