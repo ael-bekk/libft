@@ -29,7 +29,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*s;
 	char	*res;
 
-	if (!s1)
+	if (!s1 || !set)
 		return (NULL);
 	s = (char *)s1;
 	while (*s && ft_search((char *)set, *s))
