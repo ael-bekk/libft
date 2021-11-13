@@ -38,7 +38,7 @@ char	*ft_itoa(int n)
 		u = n * (-1);
 	else
 		u = n;
-	if (u == 0)
+	if (!u)
 		res[i - 1] = '0';
 	while (u)
 	{
