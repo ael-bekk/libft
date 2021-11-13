@@ -16,14 +16,9 @@ static int	ft_size_nb(int n)
 {
 	int	i;
 
-	i = 1 + !(n);
-	if (n < 0)
-		i++;
-	while (n)
-	{
-		i++;
+	i = 1 + !(n) + (n < 0);
+	while (n && i++)
 		n /= 10;
-	}
 	return (i);
 }
 
