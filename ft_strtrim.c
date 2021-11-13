@@ -16,14 +16,10 @@ static int	ft_search(char *s, char c)
 {
 	int	i;
 
-	i = 0;
-	while (s[i])
-	{
+	i = -1;
+	while (s[++i])
 		if (s[i] == c)
 			return (1);
-		else
-			i++;
-	}
 	return (0);
 }
 
