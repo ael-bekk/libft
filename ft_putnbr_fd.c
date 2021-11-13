@@ -25,10 +25,6 @@ static void	ft_pnb(unsigned int n, int fd)
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n < 0)
-	{
 		write(fd, "-", 1);
-		ft_pnb((-1) * n, fd);
-	}
-	else
-		ft_pnb(n, fd);
+	ft_pnb(-n * (n < 0) + n * !(n < 0), fd);
 }
